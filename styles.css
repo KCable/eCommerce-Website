@@ -6,9 +6,16 @@ color: #FFFFFF;
 color: #707070;
 color: #BF7631;
 max-width: 2000px;
-background-color: #707070 
-}
+background-color: #707070;
 
+ 
+
+}
+html{
+ border-left: solid 30px;
+border-right: solid 30px;
+border-color: #000000;
+}
 
 
 ul {
@@ -137,9 +144,9 @@ li a:hover {
  
 
 .products-grid {
-  max-width: 1000px;
+  
   display: inline-grid;
-  grid-template-columns: 400px 400px 400px;
+  grid-template-columns: 350px 350px 350px;
   gap: 3%;
   float: center;
 
@@ -155,15 +162,17 @@ li a:hover {
 
  .text-box-1{
   display: grid;
-  justify-content: flex-start;
-  align-content: flex-end;
+  justify-content:left;
+  align-content:flex-start;
  } 
  
 .text-box-2{
   display: inline-grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 55% 45%;
   gap: 5%;
-  align-content:flex-end ;
+  align-content:center ;
+  justify-content: left;
+  padding-bottom: 3%;
 }
 
 
@@ -213,6 +222,7 @@ li a:hover {
   margin-inline-end:auto;
   justify-items: stretch;
   gap: 5rem;
+  
 }
 
 
@@ -299,9 +309,11 @@ li a:hover {
 
 .contact-grid{
   width:100%;
-  display: flex;
-  justify-content: center;
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  justify-content:space-between;
   justify-items: stretch;
+  
   
 }
 
@@ -317,6 +329,7 @@ li a:hover {
 
 .box-1 {
   display:inline-grid;
+  grid-template-columns: auto auto;
   border: 2px solid black;
   outline: black solid 10;
   margin: auto; 
@@ -338,13 +351,13 @@ li a:hover {
 }
 
 .send-button {
-  display:inline-grid;
+  display:grid;
   background-color: #BF7631; 
   color: white; 
   border: 2px solid #BF7631;
   justify-content:center;
-  align-content: center;
-  align-self: center;
+  align-content:center;
+  align-items: flex-end;
   text-decoration: none;
   font-size: 16px;
   height: 10px;
@@ -390,8 +403,8 @@ li a:hover {
 }
 
 footer{
-  margin-top: 5%;
-  padding-top: 10%;
+  margin-top: 10%;
+  padding-top: 5%;
   
 
 }
